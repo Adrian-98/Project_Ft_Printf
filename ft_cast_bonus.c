@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_cats_bonus.c                                    :+:      :+:    :+:   */
+/*   ft_cast_bonus.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: amunoz-p <amunoz-p@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/10 16:44:28 by amunoz-p          #+#    #+#             */
-/*   Updated: 2019/12/10 17:58:26 by amunoz-p         ###   ########.fr       */
+/*   Updated: 2019/12/10 18:07:40 by amunoz-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@ void		ft_cast(const char *src, t_struct *f)
 	{
 		if (src[f->i] == 'l')
 		{
+			f->i++;
 			if (src[f->i + 1] == 'l')
 			{
 				f->ll = 1;
@@ -28,6 +29,7 @@ void		ft_cast(const char *src, t_struct *f)
 		}
 		else if (src[f->i] == 'h')
 		{
+			f->i++;
 			if (src[f->i + 1] == 'h')
 			{
 				f->hh = 1;
@@ -36,6 +38,5 @@ void		ft_cast(const char *src, t_struct *f)
 			else
 				f->h = 1;
 		}
-		f->i++;
 	}
 }

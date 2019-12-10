@@ -6,7 +6,7 @@
 /*   By: amunoz-p <amunoz-p@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/13 17:55:04 by amunoz-p          #+#    #+#             */
-/*   Updated: 2019/12/10 18:04:16 by amunoz-p         ###   ########.fr       */
+/*   Updated: 2019/12/10 18:05:41 by amunoz-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,6 +42,12 @@ int main()
 	printf("\nFlag %%ll\n");
 	printf("\nprintf[0x%llX]\n", 200);
 	ft_printf("\nft_printf[0x%llX]\n", 200);
+	printf("\nFlag %%h\n");
+	printf("\nprintf[0x%hX]\n", 100);
+	ft_printf("\nft_printf[0x%hX]\n", 100);
+		printf("\nFlag %%hh\n");
+	printf("\nprintf[0x%hhX]\n", 200);
+	ft_printf("\nft_printf[0x%hhX]\n", 200);
 	//ft_printf("\nla mia: %i\n", -2147483648);
 	/*ft_printf("----\n");
 	printf("printf *.*i (8, 8, 234):     [%*.*i]\n", 8, 8, 234);

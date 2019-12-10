@@ -6,7 +6,7 @@
 /*   By: amunoz-p <amunoz-p@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/19 17:59:02 by amunoz-p          #+#    #+#             */
-/*   Updated: 2019/12/10 17:58:33 by amunoz-p         ###   ########.fr       */
+/*   Updated: 2019/12/10 18:08:14 by amunoz-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -104,7 +104,7 @@ void			ft_read_special(const char *src, va_list argptr, t_struct *f)
 		if (src[f->i] == '%')
 		{
 			f->i++;
-			if (ft_strchr("0-.*123456789+ #l", src[f->i]))
+			if (ft_strchr("0-.*123456789+ #lh", src[f->i]))
 			{
 				ft_org_flags(src, argptr, f);
 			}
