@@ -6,7 +6,7 @@
 /*   By: amunoz-p <amunoz-p@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/19 17:59:02 by amunoz-p          #+#    #+#             */
-/*   Updated: 2019/11/27 17:03:00 by amunoz-p         ###   ########.fr       */
+/*   Updated: 2019/12/10 17:58:33 by amunoz-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,7 +60,6 @@ static void		ft_width(const char *src, va_list argptr, t_struct *f)
 
 static void		ft_flags(const char *src, t_struct *f)
 {
-
 	while (ft_strchr("0-#+ ", src[f->i]))
 	{
 		if (src[f->i] == '-')
@@ -92,6 +91,7 @@ static void		ft_org_flags(const char *src, va_list argptr, t_struct *f)
 	ft_flags(src, f);
 	ft_width(src, argptr, f);
 	ft_precision(src, argptr, f);
+	ft_cast(src, f);
 }
 
 void			ft_read_special(const char *src, va_list argptr, t_struct *f)
@@ -104,7 +104,7 @@ void			ft_read_special(const char *src, va_list argptr, t_struct *f)
 		if (src[f->i] == '%')
 		{
 			f->i++;
-			if (ft_strchr("0-.*123456789+ #", src[f->i]))
+			if (ft_strchr("0-.*123456789+ #l", src[f->i]))
 			{
 				ft_org_flags(src, argptr, f);
 			}

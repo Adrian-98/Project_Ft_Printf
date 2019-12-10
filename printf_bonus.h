@@ -6,7 +6,7 @@
 /*   By: amunoz-p <amunoz-p@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/13 13:49:38 by amunoz-p          #+#    #+#             */
-/*   Updated: 2019/12/02 12:05:10 by amunoz-p         ###   ########.fr       */
+/*   Updated: 2019/12/10 18:00:05 by amunoz-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,6 +32,10 @@ typedef struct	s_struct
 	int			precision_true;
 	int			plus;
 	int			has;
+	int			l;
+	int			ll;
+	int			h;
+	int			hh;
 }				t_struct;
 
 void			ft_putnbr(int nb);
@@ -81,5 +85,6 @@ void			ft_while(t_struct *f);
 void			ft_plus(char *src, va_list argptr, t_struct *f);
 char			*ft_substr(int *s, int start, int len);
 void			ft_print_n(const char *src, va_list argptr, t_struct *f);
+void			ft_cast(const char *src, t_struct *f);
 
 #endif

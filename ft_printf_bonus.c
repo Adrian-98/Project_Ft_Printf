@@ -6,7 +6,7 @@
 /*   By: amunoz-p <amunoz-p@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/19 17:22:46 by amunoz-p          #+#    #+#             */
-/*   Updated: 2019/11/27 15:48:41 by amunoz-p         ###   ########.fr       */
+/*   Updated: 2019/12/10 17:28:04 by amunoz-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,10 @@ static	t_struct		*ft_creatstruct(t_struct *f)
 	f->plus = 0;
 	f->space = 0;
 	f->has = 0;
+	f->l = 0;
+	f->ll = 0;
+	f->h = 0;
+	f->hh = 0;
 	return (f);
 }
 

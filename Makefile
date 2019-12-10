@@ -6,41 +6,17 @@
 #    By: amunoz-p <amunoz-p@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/11/04 17:26:05 by amunoz-p          #+#    #+#              #
-#    Updated: 2019/11/27 17:17:20 by amunoz-p         ###   ########.fr        #
+#    Updated: 2019/12/10 18:02:03 by amunoz-p         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME		=	libftprintf.a
 
-SRCS		=	ft_atoi.c \
-				ft_count_digits.c \
-				ft_count_digitshexa.c \
-				ft_count_digitspoint.c \
-				ft_hexad_low.c \
-				ft_hexad_upper.c \
-				ft_isdigit.c \
-				ft_itoa.c \
-				ft_itoa_unsigned.c \
-				ft_or_case.c \
-				ft_pointer.c \
-				ft_print_array.c \
-				ft_print_char.c \
-				ft_print_hexa.c \
-				ft_print_hexa_null.c \
-				ft_print_nb.c \
-				ft_print_null_case_char.c \
-				ft_print_pointer.c \
-				ft_print_pointer_null.c \
-				ft_print_unsigned.c \
-				ft_printf.c \
-				ft_putchar.c \
-				ft_read_special.c \
-				ft_reset_struct.c \
-				ft_set_zero.c \
-				ft_strchr.c \
-				ft_strlen.c \
-				ft_while.c \
-				ft_substr_bonus.c \
+SRCS		= ft_count_digitspoint_bonus.c    ft_itoa_unsigned_bonus.c        ft_print_hexa_bonus.c           ft_print_pointer_bonus.c        ft_read_special_bonus.c         ft_while_bonus.c \
+ft_atoi_bonus.c                 ft_hexad_low_bonus.c            ft_or_case_bonus.c              ft_print_hexa_null_bonus.c      ft_print_pointer_null_bonus.c   ft_reset_struct_bonus.c   ft_cast_bonus.c \
+ft_hexad_upper_bonus.c          ft_pointer_bonus.c              ft_print_n_bonus.c              ft_print_unsigned_bonus.c       ft_set_zero_bonus.c ft_strchr_bonus.c \
+ft_count_digits_bonus.c         ft_isdigit_bonus.c              ft_print_array_bonus.c          ft_print_nb_bonus.c             ft_printf_bonus.c \
+ft_count_digitshexa_bonus.c     ft_itoa_bonus.c                 ft_print_char_bonus.c           ft_print_null_case_char_bonus.c ft_putchar_bonus.c  ft_strlen_bonus.c \
 
 GCC			=	@gcc -Wall -Wextra -Werror
 
@@ -51,7 +27,7 @@ INCLUDES	=	./
 
 all: $(NAME)
 
-$(NAME):	$(SRCS) printf.h
+$(NAME):	$(SRCS) printf_bonus.h
 		$(GCC) -I$(INCLUDES) -c $(SRCS)
 		-@ar rc $(NAME) $(OBJS)
 		-@ranlib $(NAME)

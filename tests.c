@@ -6,7 +6,7 @@
 /*   By: amunoz-p <amunoz-p@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/13 17:55:04 by amunoz-p          #+#    #+#             */
-/*   Updated: 2019/12/10 14:38:23 by amunoz-p         ###   ########.fr       */
+/*   Updated: 2019/12/10 18:04:16 by amunoz-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ int main()
 	int	*s;
 
 	s = NULL;
-	write(1, "\n\n--- Integer Test ---\n\n", 24);
+	write(1, "\n\n--- BONUS Test ---\n\n", 24);
 	//ft_printf("\n[%n]\n", 25);
 	printf("\nFlag %%n\n");
 	printf("\nprintf:[%n]\n", s);
@@ -36,6 +36,12 @@ int main()
 	printf("\nFlag %%+\n");
 	printf("\nprintf:[%+d]\n", 16);
 	ft_printf("\nft_printf:[%+d]\n", 16);
+	printf("\nFlag %%l\n");
+	printf("\nprintf[0x%lX]\n", 166);
+	ft_printf("\nft_printf[0x%lX]\n", 166);
+	printf("\nFlag %%ll\n");
+	printf("\nprintf[0x%llX]\n", 200);
+	ft_printf("\nft_printf[0x%llX]\n", 200);
 	//ft_printf("\nla mia: %i\n", -2147483648);
 	/*ft_printf("----\n");
 	printf("printf *.*i (8, 8, 234):     [%*.*i]\n", 8, 8, 234);
