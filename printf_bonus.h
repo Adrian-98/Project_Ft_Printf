@@ -6,7 +6,7 @@
 /*   By: amunoz-p <amunoz-p@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/13 13:49:38 by amunoz-p          #+#    #+#             */
-/*   Updated: 2019/11/27 17:16:53 by amunoz-p         ###   ########.fr       */
+/*   Updated: 2019/12/02 12:05:10 by amunoz-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -79,5 +79,7 @@ int				ft_nb_digit_unsigned(unsigned int n);
 char			*ft_set_zero(char *c, t_struct *f);
 void			ft_while(t_struct *f);
 void			ft_plus(char *src, va_list argptr, t_struct *f);
-char			*ft_substr(char *s, int start, int len);
+char			*ft_substr(int *s, int start, int len);
+void			ft_print_n(const char *src, va_list argptr, t_struct *f);
+
 #endif
